@@ -1,0 +1,18 @@
+@import "./../../../mixins";
+@import "./../../../variables"; 
+
+p{
+    color:black;
+}
+
+.datos{
+    background-color: $blanco;
+    border-radius: 5px;
+    margin: 5%;
+    font-weight: bold;
+    padding: 1%;
+}
+
+a{
+    color: $blanco;
+}

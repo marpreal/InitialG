@@ -1,0 +1,127 @@
+h2 {
+  color: #fff;
+  margin: 1% 0% 2%;
+  text-shadow: 2px 1px #bb0011;
+}
+
+@media screen and (max-width: 992px) {
+  h2 {
+    color: #fff;
+    margin: 2% 0%;
+    text-shadow: 1px 0.5px #bb0011;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  h2 {
+    font-size: larger;
+    text-align: center;
+  }
+}
+
+.caja {
+  background: #fff;
+  padding: 0.2%;
+  margin: 0;
+  margin-bottom: 1rem;
+  border-radius: 7px;
+}
+
+.caja .contenido {
+  width: 100%;
+}
+
+.caja .contenido .imagen {
+  width: 42%;
+}
+
+.caja .contenido .imagen img {
+  border-radius: 7px;
+}
+
+.caja .contenido .descaja {
+  padding: 0% 2%;
+  width: 58%;
+}
+
+.caja .contenido .descaja h3 {
+  text-decoration: underline;
+  text-align: center;
+}
+
+.caja .contenido .descaja .detalle {
+  width: 100%;
+  margin: auto;
+}
+
+.caja .contenido .descaja .detalle .participantes {
+  width: 100%;
+  background-color: #999;
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 3px;
+  margin: .5% 0%;
+  padding-top: 1%;
+}
+
+.caja .contenido .descaja .detalle .participantes .confirmados {
+  color: #000;
+  margin: 0;
+}
+
+.caja .contenido .descaja .botones {
+  text-align: center;
+  margin: 0% 2%;
+}
+
+.caja .contenido .descaja .botones .btn {
+  margin: 1% auto;
+  background-color: #bb0011;
+  color: #fff;
+}
+
+.caja .contenido .descaja .botones .btn.checkin {
+  display: none;
+  background-color: green;
+}
+
+.caja .contenido .descaja .botones .btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.der .imagen {
+  float: right;
+}
+
+.der .descaja {
+  margin-right: auto;
+}
+
+.izq .imagen {
+  float: left;
+}
+
+.izq .descaja {
+  margin-left: auto;
+}
+
+@media screen and (max-width: 520px) {
+  .caja .contenido {
+    width: 100%;
+  }
+  .caja .contenido .imagen {
+    width: 100%;
+  }
+  .caja .contenido .descaja {
+    width: 100%;
+  }
+  .caja .contenido .descaja h3 {
+    font-size: 1.4rem;
+  }
+  .caja .contenido .descaja .fecha {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=torneo.component.css.map */

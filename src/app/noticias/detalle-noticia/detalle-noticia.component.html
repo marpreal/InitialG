@@ -1,0 +1,30 @@
+<h2>NOTICIAS DEL MUNDO GAMER</h2>
+
+<div *ngFor="let noticia of noticias">
+
+    <div class="caja" *ngIf="TITULO.titulo==noticia.titulo">
+
+        <div class="detalle row">
+            <a class="col-lg-6 col-md-6 col-sm-12 col-12" routerLink="/vista-noticias">Volver a NOTICIAS</a>
+            <p class="col-lg-6 col-md-6 col-sm-12 col-12">{{noticia.nombre}} - {{noticia.fecha}}</p>
+        </div>
+
+        <h1 class="titulo">{{noticia.titulo}}</h1>
+
+        <h3 class="info">{{noticia.descripcion}}</h3>
+
+        <div class="imagenCaja">
+            <img src="http://alum3.iesfsl.org/assets/img/noticias/{{noticia.imagen}}" alt="Imagen noticia">
+        </div>
+
+        <div class="descaja">
+
+            <p class="texto" [innerHtml]="noticia.texto"></p>
+
+            <a routerLink="/vista-noticias" style="float: left;">
+                Volver a NOTICIAS
+            </a>
+
+        </div>
+    </div>
+</div>

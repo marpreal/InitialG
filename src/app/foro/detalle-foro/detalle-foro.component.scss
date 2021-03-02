@@ -1,0 +1,75 @@
+@import "./../../../mixins";
+@import "./../../../variables"; 
+
+.caja {
+    background: #f8f8f8;
+    border: 2px $gris solid;
+    margin: 2% 0%;
+    overflow: hidden;
+    width: 100%;
+    max-width: 90rem;
+    border-radius: 5px;
+    padding: 2% 5%;
+
+    .titulo {
+        text-align: left;
+        width: 100%;
+        margin-bottom: 1%;
+        color: $negro;
+    }
+
+    .descaja {
+        width: 100%;
+        text-align: justify;
+
+        .lineaComentario{
+            background-color: #999;
+            margin: 1% 0%;
+            border-radius: 3px;
+        }
+
+        .texto {
+            color: $negro;
+            line-height: 1.5em;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+    }
+
+    .btn{
+        background-color: $rojo;
+        color: $blanco;
+        font-weight: bold;
+
+        &:hover{
+            background-color: $negro;
+        }
+    }
+
+    .coment{
+       
+    
+        input{
+            max-width: 100%;
+            margin: 2% auto;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .caja {
+        margin: 0.2% 0%;
+        overflow: hidden;
+        border-radius: 3px;
+        width: 100%;
+        padding: 1% 3%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+
+    .titulo {
+        font-size: larger;
+    }
+}

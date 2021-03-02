@@ -1,0 +1,37 @@
+h2 {
+  color: #fff;
+  margin: 1% 0% 2%;
+  text-shadow: 2px 1px #bb0011;
+}
+
+@media screen and (max-width: 992px) {
+  h2 {
+    color: #fff;
+    margin: 2% 0%;
+    text-shadow: 1px 0.5px #bb0011;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  h2 {
+    font-size: larger;
+    text-align: center;
+  }
+}
+
+p {
+  color: black;
+}
+
+.datos {
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 5%;
+  font-weight: bold;
+  padding: 1%;
+}
+
+a {
+  color: #fff;
+}
+/*# sourceMappingURL=detalle-juegos.component.css.map */

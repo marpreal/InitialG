@@ -1,0 +1,51 @@
+@import "./../../../mixins";
+@import "./../../../variables";
+
+mat-card {
+  background-color: $blanco;
+  padding: 1%;
+}
+
+.seccion{
+  margin: auto;
+  background-color: black; 
+  opacity: 0.9; 
+  border-radius: 10px;
+}
+
+img {
+  display: block;
+  width: 70%;
+  margin: auto;
+}
+
+.botones{
+  text-align: center;
+
+  .btn {
+    margin-bottom: 1%;
+    color: $amarillo;
+    background-color: $negro;
+    font-weight: bolder;
+    font-size: large;
+    margin: 3%;
+    
+    &:hover{
+        background-color: $amarillo;
+        color: $negro;
+    }
+  }
+}
+  
+.tarjeta {
+  margin-bottom: 2%;
+  padding: 1rem;
+}
+
+h3 {
+  margin: auto;
+  text-align: center;
+  font-weight: bolder;
+  font-size: larger;
+  color: $rojo;
+}

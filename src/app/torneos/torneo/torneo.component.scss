@@ -1,0 +1,119 @@
+@import "./../../../mixins";
+@import "./../../../variables";
+
+// CONTENIDO APARTADO
+.caja{
+    background: $blanco;
+    padding: 0.2%;
+    margin: 0;
+    margin-bottom: 1rem;
+    border-radius: 7px;
+
+    .contenido{
+        width: 100%;
+
+        .imagen{
+            width: 42%;
+            img{
+                border-radius: 7px;
+            }
+        }
+
+        .descaja{
+            padding: 0% 2%;
+            width: 58%;
+
+            h3{
+                text-decoration: underline;
+                text-align: center;
+            }
+
+            .detalle{
+                width: 100%;
+                margin: auto;
+                
+                .participantes{
+                    width: 100%;
+                    background-color: $grisclaro;
+                    color: $negro;
+                    font-weight: bold;
+                    text-align: center;
+                    border-radius: 3px;
+                    margin: .5% 0%;
+                    padding-top: 1%;
+
+                    .confirmados{
+                        color: $negro;
+                        margin: 0;
+                    }
+                }
+            }
+
+            .botones{
+                text-align: center;
+                margin: 0% 2%;
+
+                .btn{
+                    margin: 1% auto;
+                    background-color: $rojo;
+                    color: $blanco;
+                    
+                    &.checkin{  
+                        display: none;
+                        background-color: $verde;
+                    }
+
+                    &:hover{
+                        background-color: $negro;
+                        color: $blanco;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// DISEÑO PAR E IMPAR
+.der{
+    .imagen{
+        float: right;
+    }
+    .descaja{
+        margin-right: auto;
+    }
+}
+
+.izq{
+    .imagen{
+        float: left;
+    }
+    .descaja{
+        margin-left: auto;
+    }
+}
+
+// PANTALLA MOVIL
+@media screen and (max-width: 520px) {
+
+    .caja{
+        .contenido{
+            width: 100%;
+    
+            .imagen{
+                width: 100%;
+            }
+
+            .descaja{
+                width: 100%;
+
+                h3{
+                    font-size: 1.4rem;
+                }
+
+                .fecha{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

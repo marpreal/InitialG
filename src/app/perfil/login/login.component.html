@@ -1,0 +1,30 @@
+<!-- <h2>Login Form</h2> -->
+<!-- <p style="color: #f1f1f1; font-size: larger;">Si le dais al boton verde login, en la consola pone true(sesion iniciada) y os lleva a inicio
+    <br>Si haceis click en el avatar del login saldra false(sesion cerrada) y se queda aqui</p> -->
+
+<!-- <form action="/action_page.php" method="post"> -->
+    <form>
+    <div class="imgcontainer">
+        <a (click)="logout()">
+            <img src="../../assets/img/perfil.png" alt="Avatar" class="avatar">
+        </a>
+    </div>
+
+    <div class="container">
+        <label for="uname"><b>Usuario</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+
+        <label for="psw"><b>Contraseña</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <button><a (click)="login()">Entrar</a></button>
+        <label>
+            <input type="checkbox" checked="checked" name="remember"> Recuerdame
+        </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+        <button type="button" class="cancelbtn">Cancelar</button>
+        <span class="psw">¿Olvidaste <a href="#">la contraseña?</a></span>
+    </div>
+</form>

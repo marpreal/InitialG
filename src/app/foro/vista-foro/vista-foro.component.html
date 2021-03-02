@@ -1,0 +1,44 @@
+
+<!-- Page Heading/Breadcrumbs -->
+<!-- <div class="row">
+
+  <h2 class="col-lg-6 col-md-6 col-sm-6 col-12">FORO INITIALG</h2>
+  
+  <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+
+    <div class="input-group row">
+      <input type="text" class="form-control" placeholder="Buscar en el Foro">
+      <span class="inpug-group-append">
+        <button class="btn" type="button">Buscar</button>
+      </span>
+    </div>
+  </div>
+</div> -->
+
+<div class="card col-lg-7" *ngFor="let entrada of entradas">
+
+    <p>Publicado en: {{entrada.creado}}</p>
+
+    <blockquote class="blockquote">
+      <p class="mb-0">{{entrada.contenido}}</p>
+      <footer class="blockquote-footer">
+        <cite title="Titulo">{{entrada.titulo}}</cite>
+      </footer>
+    </blockquote>
+
+    <!-- Comments Form -->
+    <div class="col-md-4">
+      <a routerLink="detalle-foro/{{entrada.id}}" class="btn">Comentarios Relacionados</a>
+    </div>
+
+  </div>
+
+  <!-- <div class="col-md-4">    -->
+
+    
+
+    
+    
+  <!-- </div> -->
+
+<!-- <mat-paginator [length]="100" [pageSize]="10" [pageSizeOptions]="[5, 10, 15, 20]"></mat-paginator> -->

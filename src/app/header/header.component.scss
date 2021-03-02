@@ -1,0 +1,30 @@
+header {
+
+    background-image: url("../../assets/img/banner.png");
+    top: 0;
+    z-index: 1; /* Stay on top */
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: center;
+    color:#fff;
+
+    .Logo {
+        text-align: center;
+    }
+    .Perfil {
+        position: absolute;
+        text-align: right;
+        display: block;
+        top: 0;
+        right: 0;
+        img{
+            border-radius: 50%;
+            background-color: #bb0011;
+            width: 5.2rem;
+        }
+
+        @media screen and (max-width: 600px) {
+            display: none;
+        }
+    }
+}

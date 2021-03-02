@@ -1,0 +1,20 @@
+.test {
+  background-color: #bb0011;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.navbar-nav {
+  font-weight: bold;
+}
+
+.perfil {
+  padding: 0.3rem;
+}
+
+.perfil img {
+  width: 2rem;
+}
+/*# sourceMappingURL=nav.component.css.map */

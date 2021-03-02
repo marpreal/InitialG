@@ -1,0 +1,42 @@
+<h2>TORNEOS DE VIDEOJUEGOS</h2>
+
+<div *ngFor="let torneo of torneos; let impar = odd; let par = even;" [ngClass]="{izq:par, der:impar}">
+
+    <div class="caja row" *ngIf="Categorias.categoria==torneo.CategoriaDesc">
+        <div class="contenido">
+
+            <div class="imagen">
+                <div class="view overlay rounded z-depth-2 mb-lg-0 mb-4 waves-light" mdbWavesEffect>
+                    <img class="img-fluid" [src]="torneo.imagen" alt="Imagen Torneo {{torneo.id}}">
+                </div>
+            </div>
+
+            <div class="descaja">
+
+                <h3 class="font-weight-bold mb-3"><strong>{{torneo.titulo}}</strong></h3>
+                <p>{{torneo.descripcion}}</p>
+
+                <div class="detalle row">
+                    <div class="fecha col-lg-6 col-md-6 col-sm-12 col-12">
+                        <strong>FECHA INICIO:</strong> {{torneo.fechaInicio}}
+                        <br><strong>FECHA FIN:</strong> {{torneo.fechaFin}}
+                    </div>
+
+                    <div class="participantes col-lg-6 col-md-6 col-sm-12 col-12">
+                        PARTICIPANTES: {{torneo.numparticipantes}}
+                        <p class="confirmados">CONFIRMADOS: {{confirmados}} </p>
+                    </div>
+                </div>
+
+                <div class="botones row">
+                    <a class="btn" routerLink="/vista-torneos" title="Volver a torneos">Volver</a>
+                    <a routerLink="../../../vista-foro/detalle-foro/{{torneo.entrada_id}}" class="btn"
+                        title="Entrada relacionada en el foro">Entrada foro</a>
+                    <btn class="btn" (click)="participar()" title="Participa en el torneo">Apuntarse
+                    </btn>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

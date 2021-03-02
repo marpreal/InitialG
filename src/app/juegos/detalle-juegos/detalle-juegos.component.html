@@ -1,0 +1,45 @@
+<h2>DETALLES DEL JUEGO</h2>
+<div *ngFor="let juegos of juego">
+    <div *ngIf="ID.id==juegos.id">
+
+        <div *ngIf="juegos.tipo=='RE'; else AC">
+            <div>
+                <a routerLink="/vista-juegos/RE">
+                    <img src="./../../../assets/img/juegos/back.png" alt="volver" />
+                    Volver a Juegos Retro
+                </a>
+                <a *ngIf="TUser!==undefined&&(TUser.suscripcion=='Gamer'||TUser.suscripcion=='Admin')" routerLink="/juego/{{juegos.id}}">
+                    <img src="./../../../assets/img/juegos/go.png" alt="jugar a {{juegos.titulo}}" />
+                    JUGAR A - {{juegos.titulo}}
+                </a>
+            </div>
+        </div>
+
+        <ng-template #AC>
+            <div>
+                <a routerLink="/vista-juegos">
+                    <img src="./../../../assets/img/juegos/back.png" alt="volver" />
+                    Volver a Juegos
+                </a>
+                <a *ngIf="TUser!==undefined&&(TUser.suscripcion=='Gamer'||TUser.suscripcion=='Admin')" routerLink="/juego/{{juegos.id}}">
+                    <img src="./../../../assets/img/juegos/go.png" alt="jugar a {{juegos.titulo}}" />
+                    JUGAR A - {{juegos.titulo}}
+                </a>
+            </div>
+        </ng-template>
+
+        <div class="datos">
+            <p>NOMBRE: {{juegos.titulo}}</p>
+            <p>DESCRIPCON: {{juegos.descipcion}}</p>
+            <p>CREADOR: {{juegos.creador}}</p>
+
+            <!--             
+            <div *ngFor="let categorias of categoria">
+                <p>CATEGORIA: {{juegos.categoria_id}} </p>
+                <p>{{categoria.id}}</p>
+            </div> 
+            -->
+        </div>
+    </div>
+
+</div>

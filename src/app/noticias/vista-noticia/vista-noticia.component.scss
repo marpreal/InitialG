@@ -1,0 +1,84 @@
+@import "./../../../mixins";
+@import "./../../../variables";
+
+// BLOQUE DE LA NOTICIA
+.caja{
+    background: $blanco;
+    padding: 0.2%;
+    margin: 0;
+    margin-bottom: 1rem;
+    border-radius: 7px;
+
+    .contenido{
+        width: 100%;
+
+        a{
+            color: $negro;
+        }
+
+        .imagen{
+            width: 42%;
+            img{
+                border-radius: 7px;
+            }
+        }
+
+        .descaja{
+            padding: 0% 2%;
+            width: 58%;
+
+            p{
+                text-align: justify;
+            }
+            
+            .detalle{
+                text-align: right;
+            }
+        }
+    }
+}
+
+// DISEÑO PAR E IMPAR
+.der{
+    .imagen{
+        float: right;
+    }
+    .descaja{
+        margin-right: auto;
+    }
+}
+
+.izq{
+    .imagen{
+        float: left;
+    }
+    .descaja{
+        margin-left: auto;
+    }
+}
+
+// PANTALLA MOVIL
+@media screen and (max-width: 520px) {
+
+    .caja{
+        .contenido{
+            width: 100%;
+    
+            .imagen{
+                width: 100%;
+            }
+
+            .descaja{
+                width: 100%;
+
+                h3{
+                    font-size: 1.4rem;
+                }
+
+                .detalle{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

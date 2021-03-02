@@ -1,0 +1,19 @@
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 2.5% 2%;
+}
+
+.card {
+  width: auto;
+  background-color: #818181;
+}
+
+li > strong {
+  font-size: xx-large;
+}
+
+select, .mat-form-field {
+  margin-bottom: 10%;
+}
+/*# sourceMappingURL=crear-torneos.component.css.map */

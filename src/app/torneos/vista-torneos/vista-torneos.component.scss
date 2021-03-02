@@ -1,0 +1,86 @@
+@import "./../../../mixins";
+@import "./../../../variables";
+
+.tarjeta {
+    margin-bottom: 2%;
+}
+
+.mat-card {
+    background-color: $blanco ;
+    min-height: 100% ;
+    padding: 1% ;
+}
+
+.tarjeta {
+    padding: 1rem;
+}
+
+.crearTorneo {
+    background-color: $amarillo;
+}
+
+.crearTorneoBoton {
+    background-color: $amarillo;
+}
+
+img {
+    display: block;
+    width: 100%;
+    margin: 1% 0% 3%;
+    height: 100%;
+}
+
+.botones{
+    text-align: center;
+
+    .btn {
+        margin-bottom: 1%;
+        color: $amarillo;
+        background-color: $negro;
+        font-weight: bolder;
+        font-size: large;
+        font-family: "RockWell";
+        margin: 3%;
+        
+        &:hover{
+            background-color: $amarillo;
+            color: $negro;
+        }
+
+        &.crear:hover{
+            background-color: $blanco;
+            color: $negro;
+        }
+    }
+}
+
+h3 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: "RockWell";
+    font-weight: bolder;
+    color: $rojo;
+}
+
+.juegosCopia {
+    margin: 7%;
+    margin-top: -16%;
+}
+
+.mostrar {
+    display: block;
+}
+
+.copiaJuegos {
+    position: absolute;
+    width: 100%;
+    margin-left: 43.5%;
+    height: 99.65%;
+    padding: 5%;
+    background-color: $gris;
+    border: "5px solid";
+    border-left: "none";
+    border-radius: 0.25rem;
+    top: 3.5%;
+}

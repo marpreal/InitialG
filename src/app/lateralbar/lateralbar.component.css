@@ -1,0 +1,47 @@
+.barra-lateral {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 4rem;
+  padding-top: 0.5rem;
+  right: 0;
+}
+
+.barra-lateral a {
+  text-decoration: none;
+  text-shadow: 3px 0px 3px black;
+  color: white;
+  font-weight: bold;
+  padding: 1rem 0;
+  line-height: 2rem;
+}
+
+.barra-lateral a .icono {
+  padding: 0.1rem 0;
+}
+
+.barra-lateral a:hover {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  text-shadow: 3px 0px 3px #bb0011;
+}
+
+.barra-lateral hr {
+  background-color: #818181;
+}
+
+.barra-lateral .contenido {
+  width: 100%;
+}
+
+.barra-lateral .contenido img {
+  width: 100%;
+  max-width: 250px;
+  max-height: 150px;
+  height: auto;
+  border: 0;
+}
+
+.barra-lateral .contenido:hover {
+  opacity: 0.7;
+}
+/*# sourceMappingURL=lateralbar.component.css.map */
